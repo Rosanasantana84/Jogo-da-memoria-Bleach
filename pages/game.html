@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/game.css">
 
+  <script defer src="../js/game.js"></script>
+
   <title>Memory Game</title>
 </head>
 
@@ -15,15 +17,14 @@
 
   <main>
     <header>
+      <audio src="../images/Number_One.mp3" controls autoplay class="musica">Number One</audio>
       <span class="player"></span>
       <span>Tempo: <span class="timer">00</span></span>
+      <input class="botao" type="button" id="playButton" value="Play again!">
     </header>
 
     <div class="grid"></div>
-
   </main>
-
-  <script defer src="../js/game.js"></script>
 
 </body>
 

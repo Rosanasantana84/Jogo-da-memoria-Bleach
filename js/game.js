@@ -9,7 +9,6 @@ const characters = [
     'GIN',
     'ICHIGO',
     'KENPACHI',
-  
     'TOUSHIROU',
     'ULQUIORRA',
     'ZANGETSU',
@@ -115,3 +114,19 @@ window.onload = () => {
   startTimer();
   loadGame();
 };
+
+const playButton = document.getElementById('playButton');
+
+const resetGame = () => {
+  grid.innerHTML = '';
+
+  firstCard = '';
+  secondCard = '';
+
+  timer.innerHTML = '00';
+
+  loadGame();
+  startTimer();
+};
+
+playButton.addEventListener('click', resetGame);
